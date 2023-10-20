@@ -4,35 +4,26 @@
 #include <ti/getcsc.h>
 #include <sys/lcd.h>
 #include <sys/timers.h>
-
-void FillScreen(uint8_t color)
-{
-    memset(lcd_Ram, color, LCD_SIZE);
-}
+#include <ti/tokens.h>
+#include <tice.h>
 
 int main(void)
 {
-    char passcode[5];
     os_ClrHome();
-    sprintf(passcode, "%s", "5678");
+    os_PutStrFull("V-CONE = (1/3)(pi)(r^2)(h)");
+    os_PutStrFull("V-SPHERE = (4/3)(pi)(r^3)");
+    os_NewLine();
+    os_PutStrFull("V-CYL = (pi)(r^2)(h)");
+    os_NewLine();
+    os_PutStrFull("MEAN VALUE THEOREM");
+    os_NewLine();
+    os_PutStrFull("F'(C) = (F(B)-F(A))/B-A");
+    os_NewLine();
+    os_PutStrFull("ROLLE'S THEOREM");
+    os_NewLine();
+    os_PutStrFull("F'(C) = 0, F(A) = F(B)");
 
-    char inputBuffer[5];
-    char response[5];
+    while (!os_GetCSC());
 
-    os_GetStringInput("enter passcode: ", inputBuffer, 5);
-    sprintf(response, "%s", inputBuffer);
-
-    FillScreen(0x00);
-    msleep(1000);
-
-    if (!strcmp(passcode, response)) {
-        os_ClrHome();
-        return 0;
-    } else {
-        FillScreen(0xFF);
-        os_NewLine();
-        os_PutStrFull("no.");
-        msleep(1000);
-        main();
-    }
+    return 0;
 }

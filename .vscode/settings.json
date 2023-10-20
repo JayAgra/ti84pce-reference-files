@@ -3,6 +3,8 @@
         "*.ejs": "html",
         "stdlib.h": "c",
         "string.h": "c",
-        "string": "c"
+        "string": "c",
+        "screen.h": "c",
+        "stdio.h": "c"
     }
 }
