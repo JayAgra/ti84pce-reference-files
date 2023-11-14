@@ -6,9 +6,9 @@
 int main()
 {
     os_ClrHome();
-    os_PutStrFull("F conc ↑ to ↓, pi max");
+    os_PutStrFull("F conc up to down, pi max");
     os_NewLine();
-    os_PutStrFull("F conc ↓ to ↑, pi min");
+    os_PutStrFull("F conc down to up, pi min");
 
     while (!os_GetCSC());
 

@@ -29,12 +29,12 @@ BB0_1:
 	section	.rodata,"a",@progbits
 	private	_.str
 _.str:
-	db	"F conc ↑ to ↓, pi max", 0
+	db	"F conc up to down, pi max", 0
 
 	section	.rodata,"a",@progbits
 	private	_.str.1
 _.str.1:
-	db	"F conc ↓ to ↑, pi min", 0
+	db	"F conc down to up, pi min", 0
 
 	ident	"clang version 15.0.0 (https://github.com/jacobly0/llvm-project 5f8512f22751066573aa48ac848a6d2195838ac3)"
 	extern	__Unwind_SjLj_Register

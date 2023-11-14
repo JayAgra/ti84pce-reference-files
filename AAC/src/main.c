@@ -6,19 +6,19 @@
 int main()
 {
     os_ClrHome();
-    os_PutStrFull("F' > 0 → F increasing");
+    os_PutStrFull("F' > 0 -> F increasing");
     os_NewLine();
-    os_PutStrFull("F' < 0 → F decreasing");
+    os_PutStrFull("F' < 0 -> F decreasing");
     os_NewLine();
-    os_PutStrFull("F' (+ to -) → F rel min");
+    os_PutStrFull("F' (+ to -) -> F rel min");
     os_NewLine();
-    os_PutStrFull("F' (- to +) → F rel max");
+    os_PutStrFull("F' (- to +) -> F rel max");
     os_NewLine();
-    os_PutStrFull("F' inc → F conc up");
+    os_PutStrFull("F' inc -> F conc up");
     os_NewLine();
-    os_PutStrFull("F' dec → F conc down");
+    os_PutStrFull("F' dec -> F conc down");
     os_NewLine();
-    os_PutStrFull("F' ext val → F poi");
+    os_PutStrFull("F' ext val -> F poi");
 
     while (!os_GetCSC());
 
