@@ -2,7 +2,7 @@
 # Makefile Options
 # ----------------------------
 
-NAME = AAA
+NAME = AAB
 ICON = icon.png
 DESCRIPTION = "fuck"
 COMPRESSED = NO
