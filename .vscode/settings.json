@@ -1,10 +1,13 @@
 {
     "files.associations": {
+        "data-struct": "sql",
         "*.ejs": "html",
         "stdlib.h": "c",
         "string.h": "c",
         "string": "c",
         "screen.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "getcsc.h": "c",
+        "lcd.h": "c"
     }
 }

@@ -6,11 +6,9 @@
 int main()
 {
     os_ClrHome();
-    os_PutStrFull("S-CONE = (pi*r)^2 + pi*r*l");
-    os_PutStrFull("S-SPHERE = 4 * pi * (r^2)");
+    os_PutStrFull("F conc ↑ to ↓, pi max");
     os_NewLine();
-    os_PutStrFull("S-CYL = (2*pi*r)(h + r)");
-    os_NewLine();
+    os_PutStrFull("F conc ↓ to ↑, pi min");
 
     while (!os_GetCSC());
 

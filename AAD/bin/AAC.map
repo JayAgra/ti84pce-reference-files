@@ -7,9 +7,9 @@ Section          Base   Top    High   Length
 .init.reruncheck D1A88C D1A88C             0h
 .init            D1A88C D1A8AC            20h
 .fini            D1A8AC D1A8E0            34h
-.text            D1A8E0 D1A950            70h
-.data            D1A950 D1A950             0h
-.rodata          D1A950 D1A99D            4Dh
+.text            D1A8E0 D1A99C            BCh
+.data            D1A99C D1A99C             0h
+.rodata          D1A99C D1AA41            A5h
 .init_array      000000 000000             0h
 .ctors           000000 000000             0h
 .dtors           000000 000000             0h
@@ -45,6 +45,10 @@ skip._abort               = D1A8AC
 _exit.sp                  = D1A8AD
 _exit.flash_wait_states   = D1A8B7
 _main                     = D1A904
-_.str                     = D1A950
-_.str.1                   = D1A96B
-_.str.2                   = D1A985
+_.str                     = D1A99C
+_.str.1                   = D1A9B4
+_.str.2                   = D1A9CC
+_.str.3                   = D1A9E6
+_.str.4                   = D1AA00
+_.str.5                   = D1AA15
+_.str.6                   = D1AA2C
