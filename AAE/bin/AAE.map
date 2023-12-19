@@ -9,7 +9,7 @@ Section          Base   Top    High   Length
 .fini            D1A8A2 D1A8D6            34h
 .text            D1A8D6 D1A992            BCh
 .data            D1A992 D1A992             0h
-.rodata          D1A992 D1AA30            9Eh
+.rodata          D1A992 D1AA02            70h
 .init_array      000000 000000             0h
 .ctors           000000 000000             0h
 .dtors           000000 000000             0h
@@ -46,9 +46,9 @@ _exit.sp                  = D1A8A3
 _exit.flash_wait_states   = D1A8AD
 _main                     = D1A8FA
 _.str                     = D1A992
-_.str.1                   = D1A9A9
-_.str.2                   = D1A9C0
-_.str.3                   = D1A9D9
-_.str.4                   = D1A9F2
-_.str.5                   = D1AA06
-_.str.6                   = D1AA1C
+_.str.1                   = D1A9A1
+_.str.2                   = D1A9AE
+_.str.3                   = D1A9BC
+_.str.4                   = D1A9CF
+_.str.5                   = D1A9E1
+_.str.6                   = D1A9F0

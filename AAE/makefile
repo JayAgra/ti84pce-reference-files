@@ -2,7 +2,7 @@
 # Makefile Options
 # ----------------------------
 
-NAME = AAC
+NAME = AAE
 ICON = icon.png
 COMPRESSED = NO
 

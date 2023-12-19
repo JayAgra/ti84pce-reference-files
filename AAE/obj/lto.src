@@ -11,6 +11,8 @@ _main:
 	push	hl
 	call	_os_PutStrFull
 	pop	hl
+	ld	iy, -3145600
+	call	_os_NewLine
 	ld	hl, _.str.1
 	push	hl
 	call	_os_PutStrFull
@@ -23,6 +25,28 @@ _main:
 	pop	hl
 	ld	iy, -3145600
 	call	_os_NewLine
+	ld	hl, _.str.3
+	push	hl
+	call	_os_PutStrFull
+	pop	hl
+	ld	iy, -3145600
+	call	_os_NewLine
+	ld	hl, _.str.4
+	push	hl
+	call	_os_PutStrFull
+	pop	hl
+	ld	iy, -3145600
+	call	_os_NewLine
+	ld	hl, _.str.5
+	push	hl
+	call	_os_PutStrFull
+	pop	hl
+	ld	iy, -3145600
+	call	_os_NewLine
+	ld	hl, _.str.6
+	push	hl
+	call	_os_PutStrFull
+	pop	hl
 BB0_1:
 	call	_os_GetCSC
 	or	a, a
@@ -35,17 +59,37 @@ BB0_1:
 	section	.rodata,"a",@progbits
 	private	_.str
 _.str:
-	db	"S-CONE = (pi*r)^2 + pi*r*l", 0
+	db	"trig fn derivs", 0
 
 	section	.rodata,"a",@progbits
 	private	_.str.1
 _.str.1:
-	db	"S-SPHERE = 4 * pi * (r^2)", 0
+	db	"sinx -> cosx", 0
 
 	section	.rodata,"a",@progbits
 	private	_.str.2
 _.str.2:
-	db	"S-CYL = (2*pi*r)(h + r)", 0
+	db	"cosx -> -sinx", 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.3
+_.str.3:
+	db	"cscx -> -cscx*cotx", 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.4
+_.str.4:
+	db	"secx -> secx*tanx", 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.5
+_.str.5:
+	db	"tanx -> sexc^2", 0
+
+	section	.rodata,"a",@progbits
+	private	_.str.6
+_.str.6:
+	db	"cotx -> -(cscx)^2", 0
 
 	ident	"clang version 15.0.0 (https://github.com/jacobly0/llvm-project 5f8512f22751066573aa48ac848a6d2195838ac3)"
 	extern	__Unwind_SjLj_Register
